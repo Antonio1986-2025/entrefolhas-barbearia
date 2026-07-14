@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Entrefolhas — Natureza & Estilo</title>
+    <meta name="description" content="Barbearia Entrefolhas — Jd. São Bernardo, Campo Grande - MS. Corte, barba e estilo com a essência da natureza. Agende seu horário!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="header">
+        <div class="header__inner container">
+            <a href="/" class="header__logo">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <circle cx="15" cy="15" r="15" fill="#0a1a0a"/>
+                    <path d="M15 3C8.4 3 3 8.4 3 15s5.4 12 12 12 12-5.4 12-12S21.6 3 15 3zm0 3c2.2 0 4 1.8 4 4s-1.8 4-4 4-4-1.8-4-4 1.8-4 4-4zm-5 12c0-2.8 2.2-5 5-5s5 2.2 5 5v1H10v-1z" fill="#c9a96e"/>
+                </svg>
+                <span class="header__logo-text">Entrefolhas</span>
+            </a>
+            <nav class="nav" id="nav">
+                <a href="#sobre" class="nav__link">Sobre</a>
+                <a href="#servicos" class="nav__link">Serviços</a>
+                <a href="#unidade" class="nav__link">Unidade</a>
+                <a href="#contato" class="nav__link">Contato</a>
+                <a href="#" onclick="openBookingModal();return false" class="nav__link nav__cta">Agendar</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="hero__bg"></div>
+        <div class="hero__content container">
+            <span class="hero__badge">🌿 CAMPO GRANDE - MS</span>
+            <h1 class="hero__title">
+                Barbearia<br>
+                <span class="hero__title-highlight">Entrefolhas</span>
+            </h1>
+            <p class="hero__subtitle">Onde a natureza encontra o estilo. Tradição, cuidado e um ambiente que inspira — no Jardim São Bernardo.</p>
+            <div class="hero__cta">
+                <a href="#" onclick="openBookingModal();return false" class="btn btn--primary">🌿 Agende seu Horário</a>
+                <a href="https://wa.me/5567" target="_blank" class="btn btn--whatsapp">📱 WhatsApp</a>
+            </div>
+            <div class="hero__stats">
+                <div class="stat"><span class="stat__num">🌱</span><span class="stat__label">Nova</span></div>
+                <div class="stat"><span class="stat__num">1</span><span class="stat__label">Unidade</span></div>
+                <div class="stat"><span class="stat__num">🌿</span><span class="stat__label">Natureza</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SOBRE ===== -->
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <div class="sobre__grid">
+                <div class="sobre__content">
+                    <span class="section__tag">SOBRE</span>
+                    <h2 class="section__title" style="text-align:left">Onde a natureza<br>encontra o estilo</h2>
+                    <p class="sobre__text">Na Barbearia Entrefolhas, cada corte é uma experiência que conecta você à essência da natureza. Inspirados pelo verde e pela tranquilidade das folhas, criamos um ambiente onde o cuidado pessoal se encontra com a sofisticação natural.</p>
+                    <p class="sobre__text">Nosso espaço no Jardim São Bernardo foi pensado para oferecer mais que um corte de cabelo — uma pausa revigorante no seu dia, com atendimento personalizado e produtos que respeitam o meio ambiente.</p>
+                    <div class="sobre__diferenciais">
+                        <span>🌿 Inspirado na Natureza</span>
+                        <span>🌱 Ambiente Acolhedor</span>
+                        <span>✂️ Profissionais Expert</span>
+                        <span>📍 Jd. São Bernardo</span>
+                    </div>
+                </div>
+                <div class="sobre__visual">
+                    <div class="sobre__card">
+                        <div class="sobre__icon">🌿</div>
+                        <h3>Natureza</h3>
+                        <p>Inspiração verde em cada detalhe</p>
+                    </div>
+                    <div class="sobre__card">
+                        <div class="sobre__icon">✂️</div>
+                        <h3>Estilo Natural</h3>
+                        <p>Realce sua melhor versão</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVIÇOS ===== -->
+    <section class="servicos" id="servicos">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">SERVIÇOS</span>
+                <h2 class="section__title">Nossos serviços</h2>
+                <p class="section__desc">Preços que cabem no seu bolso, qualidade que você merece.</p>
+            </div>
+            <div class="servicos__grid">
+                <div class="servico-card">
+                    <div class="servico-card__icon">✂️</div>
+                    <h3>Corte</h3>
+                    <p>Corte personalizado com tesoura e máquina, finalização com produtos premium.</p>
+                    <span class="servico-card__preco">R$ 40</span>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-card__icon">🧔</div>
+                    <h3>Barba</h3>
+                    <p>Aparar, modelar e hidratar. Navalha, pincel e toalha quente.</p>
+                    <span class="servico-card__preco">R$ 30</span>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-card__icon">🔥</div>
+                    <h3>Combo Corte + Barba</h3>
+                    <p>Nosso combo mais popular. Corte e barba com finalização premium.</p>
+                    <span class="servico-card__preco">R$ 60</span>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-card__icon">👦</div>
+                    <h3>Corte Infantil</h3>
+                    <p>Corte infantil com paciência e carinho. Ambiente lúdico e acolhedor.</p>
+                    <span class="servico-card__preco">R$ 30</span>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-card__icon">💆</div>
+                    <h3>Hidratação</h3>
+                    <p>Tratamento capilar com produtos profissionais. Cabelos saudáveis e brilhantes.</p>
+                    <span class="servico-card__preco">R$ 30</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== UNIDADE ===== -->
+    <section class="unidades" id="unidade">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">UNIDADE</span>
+                <h2 class="section__title">Nossa unidade</h2>
+                <p class="section__desc">Venha nos conhecer no Jardim São Bernardo.</p>
+            </div>
+            <div class="unidades__grid">
+                <div class="unidade-card">
+                    <div class="unidade-card__header">
+                        <span class="unidade-card__badge">🌿 Jardim São Bernardo</span>
+                    </div>
+                    <div class="unidade-card__body">
+                        <h3>Barbearia Entrefolhas</h3>
+                        <p class="unidade-card__end"><strong>Jd. São Bernardo</strong> — Campo Grande - MS</p>
+                        <p class="unidade-card__end">Campo Grande - MS</p>
+                        <div class="unidade-card__info">
+                            <span>🕐 Seg–Sex: 08h–19h | Sáb: 08h–17h</span>
+                            <span>🌿 Ambiente natural e acolhedor</span>
+                        </div>
+                    </div>
+                    <div class="unidade-card__actions">
+                        <a href="https://wa.me/5567" target="_blank" class="btn btn--whatsapp" style="width:100%;justify-content:center">📱 WhatsApp (Em breve)</a>
+                        <a href="https://www.google.com/maps/search/Barbearia+Entrefolhas+Campo+Grande/" target="_blank" class="btn btn--outline" style="width:100%;justify-content:center">🗺️ Ver no Maps</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DEPOIMENTOS ===== -->
+    <section class="depoimentos" id="depoimentos">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">AVALIAÇÕES</span>
+                <h2 class="section__title">O que dizem os clientes</h2>
+            </div>
+            <div class="depoimentos__grid">
+                <div class="depoimento-card">
+                    <div class="depoimento__stars">★★★★★</div>
+                    <p class="depoimento__text">"Ambiente incrível! O cuidado com cada detalhe e o atendimento acolhedor fazem toda a diferença. Saí de lá me sentindo renovado."</p>
+                    <div class="depoimento__autor">
+                        <span class="depoimento__nome">Carlos E.</span>
+                        <span class="depoimento__fonte">Google ★5.0</span>
+                    </div>
+                </div>
+                <div class="depoimento-card">
+                    <div class="depoimento__stars">★★★★★</div>
+                    <p class="depoimento__text">"Melhor custo-benefício da região! O combo corte + barba é imbatível. Ambiente agradável e profissionais muito atenciosos."</p>
+                    <div class="depoimento__autor">
+                        <span class="depoimento__nome">Felipe R.</span>
+                        <span class="depoimento__fonte">Google ★5.0</span>
+                    </div>
+                </div>
+                <div class="depoimento-card">
+                    <div class="depoimento__stars">★★★★★</div>
+                    <p class="depoimento__text">"Adorei o espaço! Tem uma energia muito boa, parece que você está em meio à natureza. Corte impecável e preço justo. Super recomendo!"</p>
+                    <div class="depoimento__autor">
+                        <span class="depoimento__nome">Thiago M.</span>
+                        <span class="depoimento__fonte">Google ★5.0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GALERIA ===== -->
+    <section class="galeria" id="galeria">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">GALERIA</span>
+                <h2 class="section__title">Nosso trabalho</h2>
+                <p class="section__desc">Siga @entrefolhasbarbearia no Instagram para ver mais!</p>
+            </div>
+            <div class="galeria__grid">
+                <div class="galeria__item"><div class="galeria__placeholder" style="background:linear-gradient(135deg,#0a1a0a,#1a3a1a)"><span>🌿</span></div></div>
+                <div class="galeria__item"><div class="galeria__placeholder" style="background:linear-gradient(135deg,#0a1a0a,#2a4a2a)"><span>✂️</span></div></div>
+                <div class="galeria__item"><div class="galeria__placeholder" style="background:linear-gradient(135deg,#0a1a0a,#c9a96e)"><span>🧔</span></div></div>
+                <div class="galeria__item"><div class="galeria__placeholder" style="background:linear-gradient(135deg,#0a1a0a,#1a3a1a)"><span>🌱</span></div></div>
+                <div class="galeria__item"><div class="galeria__placeholder" style="background:linear-gradient(135deg,#0a1a0a,#c9a96e)"><span>💈</span></div></div>
+                <div class="galeria__item"><div class="galeria__placeholder" style="background:linear-gradient(135deg,#0a1a0a,#2a4a2a)"><span>🍃</span></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section class="contato" id="contato">
+        <div class="container">
+            <div class="contato__card">
+                <h2 class="contato__title">Vem fazer um <span class="highlight">corte</span> com a gente</h2>
+                <p class="contato__desc">Agende pelo WhatsApp ou direto pelo site. A gente te espera!</p>
+                <div class="contato__buttons">
+                    <a href="https://wa.me/5567" target="_blank" class="btn btn--whatsapp">📱 (67) Em breve</a>
+                    <a href="#" onclick="openBookingModal();return false" class="btn btn--primary">📅 Agendar Online</a>
+                </div>
+                <div class="contato__social">
+                    <a href="https://www.instagram.com/" target="_blank" class="social-link">📸 @entrefolhasbarbearia</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <svg width="22" height="22" viewBox="0 0 30 30" fill="none">
+                        <circle cx="15" cy="15" r="15" fill="#0a1a0a"/>
+                        <path d="M15 3C8.4 3 3 8.4 3 15s5.4 12 12 12 12-5.4 12-12S21.6 3 15 3zm0 3c2.2 0 4 1.8 4 4s-1.8 4-4 4-4-1.8-4-4 1.8-4 4-4zm-5 12c0-2.8 2.2-5 5-5s5 2.2 5 5v1H10v-1z" fill="#c9a96e"/>
+                    </svg>
+                    <span>Barbearia Entrefolhas</span>
+                </div>
+                <div class="footer__unidades">
+                    <span>📍 Jd. São Bernardo — Campo Grande - MS</span>
+                </div>
+                <div class="footer__links">
+                    <a href="#sobre">Sobre</a>
+                    <a href="#servicos">Serviços</a>
+                    <a href="#unidade">Unidade</a>
+                    <a href="#contato">Contato</a>
+                    <a href="https://wa.me/5567">WhatsApp</a>
+                </div>
+                <p class="footer__copy">© 2026 Barbearia Entrefolhas — Site por EcoSites</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== MODAL AGENDAMENTO 4 ETAPAS ===== -->
+    <div class="booking-overlay" id="bookingOverlay" onclick="closeBookingModal(event)">
+        <div class="booking-modal" onclick="event.stopPropagation()">
+            <button class="booking-modal__close" onclick="closeBookingModal()">✕</button>
+            <div class="booking-modal__header">
+                <h2>Agende seu Horário</h2>
+                <p>Escolha o serviço, data e horário ideal</p>
+            </div>
+
+            <div class="booking-steps" id="bookingSteps">
+                <!-- Step 1: Serviço -->
+                <div class="booking-step" data-step="1">
+                    <span class="booking-step__label">Etapa 1 de 4</span>
+                    <h3>Escolha o serviço</h3>
+                    <div class="booking-opcoes" id="servicoOptions">
+                        <button class="booking-opcao" data-value="corte" data-preco="40"><span class="opcao-emoji">✂️</span><span class="opcao-nome">Corte</span><span class="opcao-preco">R$ 40</span></button>
+                        <button class="booking-opcao" data-value="barba" data-preco="30"><span class="opcao-emoji">🧔</span><span class="opcao-nome">Barba</span><span class="opcao-preco">R$ 30</span></button>
+                        <button class="booking-opcao" data-value="combo" data-preco="60"><span class="opcao-emoji">🔥</span><span class="opcao-nome">Combo Corte + Barba</span><span class="opcao-preco">R$ 60</span></button>
+                        <button class="booking-opcao" data-value="infantil" data-preco="30"><span class="opcao-emoji">👦</span><span class="opcao-nome">Corte Infantil</span><span class="opcao-preco">R$ 30</span></button>
+                        <button class="booking-opcao" data-value="hidratacao" data-preco="30"><span class="opcao-emoji">💆</span><span class="opcao-nome">Hidratação</span><span class="opcao-preco">R$ 30</span></button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Data -->
+                <div class="booking-step" data-step="2" style="display:none">
+                    <span class="booking-step__label">Etapa 2 de 4</span>
+                    <h3>Escolha a data</h3>
+                    <input type="date" id="bookingDate" class="booking-input" min="">
+                </div>
+
+                <!-- Step 3: Horário -->
+                <div class="booking-step" data-step="3" style="display:none">
+                    <span class="booking-step__label">Etapa 3 de 4</span>
+                    <h3>Escolha o horário</h3>
+                    <div class="booking-horarios" id="horariosContainer">
+                        <button class="booking-horario" data-time="08:00">08:00</button>
+                        <button class="booking-horario" data-time="09:00">09:00</button>
+                        <button class="booking-horario" data-time="10:00">10:00</button>
+                        <button class="booking-horario" data-time="11:00">11:00</button>
+                        <button class="booking-horario" data-time="13:00">13:00</button>
+                        <button class="booking-horario" data-time="14:00">14:00</button>
+                        <button class="booking-horario" data-time="15:00">15:00</button>
+                        <button class="booking-horario" data-time="16:00">16:00</button>
+                        <button class="booking-horario" data-time="17:00">17:00</button>
+                        <button class="booking-horario" data-time="18:00">18:00</button>
+                    </div>
+                </div>
+
+                <!-- Step 4: Revisar e Confirmar -->
+                <div class="booking-step" data-step="4" style="display:none">
+                    <span class="booking-step__label">Etapa 4 de 4</span>
+                    <h3>Revisar e Confirmar</h3>
+                    <div class="booking-resumo" id="bookingResumo">
+                        <div class="resumo-linha"><span>Serviço</span><span id="resServico">—</span></div>
+                        <div class="resumo-linha"><span>Data</span><span id="resData">—</span></div>
+                        <div class="resumo-linha"><span>Horário</span><span id="resHora">—</span></div>
+                        <div class="resumo-linha resumo-total"><span>Valor</span><span id="resPreco">R$ 0</span></div>
+                    </div>
+                    <a id="bookingConfirmBtn" href="#" target="_blank" class="btn btn--whatsapp" style="width:100%;justify-content:center;margin-top:1rem">📤 Confirmar via WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="booking-nav">
+                <button class="booking-nav__back" id="bookingBack" style="display:none" onclick="prevBookingStep()">← Voltar</button>
+                <span class="booking-dots" id="bookingDots">
+                    <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
