@@ -106,8 +106,8 @@ function prevBookingStep() {
 }
 
 // Step 1: Select servico
-document.addEventListener('click', e => {
-    const btn = e.target.closest('#servicoOptions .booking-opcao');
+document.getElementById('servicoOptions').addEventListener('click', e => {
+    const btn = e.target.closest('.booking-opcao');
     if (!btn) return;
     document.querySelectorAll('#servicoOptions .booking-opcao').forEach(b => b.classList.remove('selected'));
     btn.classList.add('selected');
@@ -123,7 +123,7 @@ document.getElementById('bookingDate')?.addEventListener('change', function() {
 });
 
 // Step 3: Time
-document.addEventListener('click', e => {
+document.getElementById('horariosContainer').addEventListener('click', e => {
     const btn = e.target.closest('.booking-horario');
     if (!btn) return;
     document.querySelectorAll('.booking-horario').forEach(b => b.classList.remove('selected'));
